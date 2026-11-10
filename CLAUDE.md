@@ -1,92 +1,98 @@
 # CLAUDE.md — PONTE
 
-Este arquivo dá contexto ao Claude sobre a PONTE. Leia antes de qualquer tarefa nesta pasta.
+Mapa curto para o agente. Leia o que a tarefa pede, não tudo "por via das dúvidas".
+Base: o documento de entrada "PONTE para o Juninho", de 09/11/2026. Ele é interno e
+fica fora do git. Quando este arquivo e o Leo discordarem, vale o Leo.
 
-> Itens marcados com **[A PREENCHER]** ainda precisam ser confirmados pelo Orlando.
+## Quem sou eu aqui
 
-## 1. Quem somos
+- **Orlando (Juninho):** sócio da PONTE. Cuida de vendas, operação e trabalho com agentes de IA.
+- **Leo (Leo Resende):** fundador e dono único do código, na organização PONTETECH do GitHub. Contato: leo@ponte.dev.
+- Fale comigo em **português do Brasil** e em linguagem simples. Não sou programador: explique cada termo técnico na primeira vez em que ele aparecer.
+- A clínica odontológica (Shine / Dr. Orlando Reis) é **outro negócio**. Não misture os dois.
+- A frente de cinema fica fora deste arquivo. Ela é com o Leo.
 
-- **Nome:** PONTE (sempre em maiúsculas)
-- **Assinatura:** "pensando sistemas"
-- **Site:** https://ponte.dev (versões em português e em inglês, em `/en/`)
-- **O que é:** um studio de software. Criamos ferramentas com IA para o dia a dia de empresas e equipes.
-- **Pergunta central da marca:** "Como integrar IA ao trabalho de forma eficaz e segura?"
-- **Chamada para contato:** "Tem um processo que pode funcionar melhor?"
-- **Contato:** leo@ponte.dev
-- **Sócios e equipe:** [A PREENCHER: nome e papel de cada pessoa, por exemplo Orlando e Leo]
+## A PONTE em poucas linhas
 
-## 2. Os quatro pilares (texto do site)
+- **Tese:** "Software com IA para quem ainda trabalha no papel."
+- **Na prática:** ferramentas simples para profissões que o software deixou de lado. "A IA faz o braçal. O especialista decide." Nenhum produto substitui o profissional.
+- **A IA não inventa:** na dúvida, deixa o campo vazio ou marca "incerto". O que o agente produz nasce como rascunho, e uma pessoa aprova.
+- **Rodapé:** todo produto leva "Powered by PONTE".
+- **Site:** https://ponte.dev, institucional. Projeto de cliente fica em endereço próprio na Netlify, com noindex.
+- **Peças que se repetem:** WhatsApp oficial da Meta, Supabase, IA da Anthropic, Whisper para áudio, Netlify/Vercel e o Jev (TypeSafe).
 
-1. **Sob medida:** cada projeto parte da rotina e dos objetivos da equipe, do diagnóstico ao desenvolvimento.
-2. **Proteção de dados:** execução local ou na infraestrutura do cliente para conteúdo sensível. Acesso por função, trilha de auditoria e backup, com atenção à LGPD.
-3. **Entrega ágil:** do zero ao ar em dias, com login e banco de dados. Componentes reutilizáveis reduzem o tempo de construção.
-4. **Da vitrine à operação:** sites e mídias sociais, agentes de atendimento, plataformas de gestão e logística, além de capacitação de equipes em IA.
+## Frentes (só nome e estágio)
 
-## 3. Serviços
+Números, preços, nomes de cliente e prazos ficam no documento interno, não aqui.
 
-- Sites e mídias sociais
-- Agentes de atendimento com IA
-- Plataformas de gestão
-- Logística
-- Capacitação de equipes em IA
+| Frente | O que é | Estágio | No ar para cliente? |
+|---|---|---|---|
+| GIZ | assistente acadêmico pelo WhatsApp para docentes | no ar, **sem cliente pagante** | sim (app, banco e `main`) |
+| ili | app para corretor de imóveis (repositório `ponte-imo`) | pagando | sim |
+| NoCampo | assistente de lavoura pelo WhatsApp | protótipo | não |
+| Lê e Conta | leitura e escrita para a educação inclusiva, 3º ao 5º ano | protótipo | sim (páginas) |
+| PONTE.TUR | operação de agência de turismo (serviço dedicado) | no ar | sim |
+| São Mateus II | gestão de fazenda por satélite, drone e WhatsApp | proposta | sim (sites) |
+| Painel do leite | demonstração com dados simulados | demonstração | sim |
+| Pousada Anamã | sistema e site de pousada | código pronto, fora do ar | não |
+| Kit de Natal do Empório | kit de café em consignação | proposta | sim (proposta) |
+| Site da GPM | site de escritório de advocacia e proposta de mídia | no ar | sim |
+| Overhead / NEAR | hackathons | competição | público: passa pelo Leo |
 
-## 4. Produtos (a série PONTE_)
+**Largados (não reabra sem o Leo):** CLARA café (não sugira "Clara"), marca Santa Rosa, DIV Fund, Talhão e apps-rural.
+**Parados:** Vet., ATER e PONTE_GRÃO.
 
-Os produtos seguem o padrão `PONTE_NOME`, numerados de 001 a 006. Todos aparecem no site como "em desenvolvimento".
+## Regras da casa
 
-| Nº  | Produto        | Para quem / o quê                  |
-|-----|----------------|------------------------------------|
-| 001 | [A PREENCHER]  | [A PREENCHER]                      |
-| 002 | PONTE_ILI      | corretor de imóveis                |
-| 003 | PONTE_GIZ      | diário do professor                |
-| 004 | PONTE_TUR      | operação de agência de turismo     |
-| 005 | PONTE_PRELIGHT | [A PREENCHER: aparece no código do site] |
-| 006 | PONTE_ENGE     | inspeção predial                   |
+**Sigilo (regra de ouro).**
+- Repositório guarda **só código**.
+- Nunca vão para o GitHub: conteúdo de cliente, planilha com números, auditoria, `.env`, chave, token, senha, dado pessoal ou dado de pagamento.
+- Material de cliente no Drive também é sigiloso: não compartilhe nem mude quem vê.
+- Se um segredo vazar: primeiro troque a credencial no sistema real, depois tire do git, depois avise o Leo.
+- "Na dúvida, não commita e fala com o Leo."
 
-## 5. Clientes
+**Chaves e senhas.**
+- Ficam no Keychain do Mac, nunca em documento nem na conversa.
+- Quando o agente precisar de uma chave, quem põe no lugar sou eu.
 
-- Empresas e equipes que querem usar IA no trabalho com segurança.
-- Setores atendidos pelos produtos: imobiliário, educação, turismo e engenharia/inspeção predial.
-- [A PREENCHER: outros segmentos e clientes atuais]
+**Números internos** (custo, margem, valor da empresa, termos do aporte) nunca saem para cliente, investidor ou parceiro, nem em pedaços. Cliente nunca vê custo nem margem.
 
-## 6. Tom de voz
+**Não diga** que o GIZ tem cliente pagando.
 
-- **Direto e calmo**, com frases curtas. Sem exagero e sem promessas milagrosas.
-- **Técnico, mas acessível.** Fala de segurança, dados e processos de um jeito que um gestor entende.
-- **Foco no processo do cliente, e não na tecnologia pela tecnologia.** A IA é um meio.
-- **Segurança e LGPD como diferencial:** sempre que fizer sentido, lembrar que os dados podem ficar com o cliente.
-- **Evitar:** "revolucionário", "disruptivo", jargão vazio e promessa de substituir pessoas. [A PREENCHER: outras palavras proibidas]
+## Quem aprova o quê
 
-## 7. Identidade visual (extraída do site)
+- **No dia a dia, aprovo eu:** rascunho, pesquisa, teste, arquivo novo, commit, material interno e proposta nova.
+- **Passa pelo Leo:**
+  - o que mexe no que já está no ar para cliente: o GIZ em produção (a `main` do GIZ publica sozinha), os sites publicados e qualquer banco de produção;
+  - o que vai para investidor: os decks, o one-pager e o material do Founders Club.
+- Um OK vale para uma ação, não para as seguintes.
+- Quando uma trava perguntar e a decisão for do Leo, **espere**. Não procure outro caminho para o mesmo efeito.
+- Artifact privado não conta como publicar. Compartilhar o link já conta.
 
-**Fontes**
-- Raleway (600–900): títulos
-- IBM Plex Mono (400–600): textos, rótulos e estilo "terminal"
-- VT323: detalhes no estilo terminal retrô
+## Como trabalhar (playbook: ambiente → evidência → fluxo)
 
-**Cores principais**
-| Nome         | Hex       | Uso                    |
-|--------------|-----------|------------------------|
-| paper        | `#fff8e7` | fundo (creme)          |
-| paper-warm   | `#f6eed6` | fundo alternativo      |
-| ink          | `#0f1923` | texto principal        |
-| ink-soft     | `#2e3947` | texto secundário       |
-| ink-muted    | `#565f6c` | texto de apoio         |
-| amber        | `#c68a14` | destaque               |
-| line         | `#1f2a38` | linhas e bordas        |
+1. **Contrato antes de começar:** toda tarefa com entrega tem tarefa · insumos · entrega · restrições · `pronto_quando`. O `pronto_quando` são 2 a 5 critérios conferíveis, que falham hoje. Se não der para escrever o critério, pergunte.
+2. **Pronto só com prova mostrada:** saída de comando, teste passando, arquivo que abre, link que responde. "Deve funcionar" não é prova.
+3. **Até 3 tentativas.** Se o resultado se repetir, pare e me traga: falhou · esperado · observado · escopo · becos tentados.
+4. **Quem produz não aprova:** o que sai para alguém passa por revisão de um subagente em contexto separado.
+5. **Memória em arquivo:** o que atravessa sessões vai para um registro com objetivo · tentado · descoberto · próximo · nunca. Segredo nunca entra nele.
+6. **Nunca:** `--no-verify`, teste desligado, verificador editado para passar ou regra em CAIXA ALTA como correção.
+7. **Scripts de publicação:** rode primeiro sem `--ok` (só mostra o que mudaria). O `--ok` publica e passa pela regra de aprovação.
 
-**Cores de apoio (ondas e terminal):** azul `#2a7de1`, verde-azulado `#109d7b`, âmbar `#cf7c00`, e os tons de terminal `#255b70`, `#8c4636`, `#496f3a` e `#68557d`.
+## Marca e tom
 
-**Estética:** papel creme com tinta escura, janelas no estilo terminal, numeração em código (001, 002…) e nomes em CAIXA_ALTA com sublinhado.
+- **Nome:** PONTE, em maiúsculas. Na tríade e no bot, "GIZ". Os materiais publicados ainda usam "Giz".
+- **Logo:** o selo preto horizontal, com barras brancas e "PONTE". O "P" no quadrado vermelho é só ícone de app. Os arquivos estão em Meu Drive/PONTE/01_Marca.
+- **Visual:** só versão clara, desde 01/11/2026. Fontes do site: Raleway (títulos) e IBM Plex Mono (texto). Fundo creme `#fff8e7`, tinta `#0f1923`, destaque âmbar `#c68a14`.
+- **Tom:** português direto, sem enchimento. "Mostre o dado, não o adjetivo."
+- **Proibido:** "revolucionar", "transformar", "potencializado por IA", "o futuro de" e emoji decorativo.
+- **Sem gênero** no GIZ e no deck: "docente", "quem orienta", "coordenação".
+- **Demonstração** usa dados fictícios, sem nome real de pessoa ou instituição.
 
-## 8. Como trabalhar comigo (Orlando)
+## Onde fica cada coisa
 
-- Escreva sempre em **português do Brasil**, a menos que eu peça inglês.
-- Explique em linguagem simples. Não sou programador.
-- Antes de publicar, enviar ou apagar qualquer coisa, me pergunte.
-- Ferramentas que uso: [A PREENCHER, por exemplo Canva, Figma, Google Drive, Metricool, Gamma]
-- O que vou pedir aqui: [A PREENCHER, por exemplo conteúdo, propostas comerciais, apresentações, código dos produtos]
-
-## 9. Fora do escopo
-
-- A clínica odontológica (Shine / Dr. Orlando Reis) é **outro negócio**. Não misture os contextos.
+- **Código:** GitHub, organização **PONTETECH**, privada (acesso por convite do Leo). Repositórios: `ponte-dev`, `handbook`, `ponte-giz`, `ponte-imo`, `nocampo`, `ponte-tur`, `PONTE_SMATEUS` e outros.
+- **Playbook completo:** doc 11 do `PONTETECH/handbook`, no ramo `docs/playbook-agentes-ia`.
+- **Drive:** Meu Drive/PONTE (01_Marca, 02_Apresentações, 05_Documentos). O acesso é com o Leo.
+- **Este repositório** (`Junimorlando/ponte`) é pessoal. Ele guarda só este mapa e notas sem sigilo.
+- **Cada projeto tem o próprio CLAUDE.md:** leia antes de mexer nele. O do projeto vale por cima deste.
